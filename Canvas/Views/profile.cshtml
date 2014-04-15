@@ -1,0 +1,12 @@
+﻿@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<dynamic>
+
+@{
+  Layout = "Views/shared/layout";
+}
+
+<div id="well">
+  <h3>My Balance: @Model.User.UserData.Balance</h3>
+  @foreach (var image in Model.Images) {
+    <h1>@image.UserData.UserId</h1>
+  }
+</div>
